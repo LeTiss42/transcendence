@@ -28,7 +28,7 @@ A virtual environment is (amongst other things):
 ----
 python3 -m venv /path/to/new/virtual/environment
 ----
-+
+
 * activate the virtual environment with :
 +
 [,bash]
@@ -36,5 +36,39 @@ python3 -m venv /path/to/new/virtual/environment
 . .venv/bin/activate
 ----
 +
+* you can deactivate a virtual environment by typing deactivate in your shell
++
+[,bash]
+----
+deactivate
+----
++
 You should go through this activation process any time you want to work on your project
+
+=== pushing to git
+
+-> https://pip.pypa.io/en/stable/cli/pip_freeze/
+
+For different reasons, this virtual environment might not entirely work with a different path on a different machine. It is then not a very good idea to push it all on a git server. A good solution is to use the freeze command from pip :
+
+[,bash]
+----
+python3 -m pip freeze
+----
+
+It will list all installed packages. You can put this list in a .txt file which can be used to install the said packages in another environment :
+
+* create a file "requirements.txt" that you can easily put in your git repo
++
+[,bash]
+----
+python3 -m pip freeze > requirements.txt
+----
+
+* use this same file to install all the package listed in another env
++
+[,bash]
+----
+python3 -m pip install -r requirements.txt
+----
 
