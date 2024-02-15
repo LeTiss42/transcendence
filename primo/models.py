@@ -5,4 +5,4 @@ class Champignon(models.Model):
 	type = models.CharField(max_length=200)
 
 	def __str__(self):
-		return self.name + ' ' + self.type
+		return self.name + ' de type ' + self.type
