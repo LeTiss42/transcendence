@@ -65,10 +65,11 @@ It will list all installed packages. You can put this list in a .txt file which 
 python3 -m pip freeze > requirements.txt
 ----
 
-* use this same file to install all the package listed in another env
+* use this same file to install in another env all the listed packages
 +
 [,bash]
 ----
 python3 -m pip install -r requirements.txt
 ----
+
 
