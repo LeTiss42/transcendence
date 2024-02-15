@@ -72,4 +72,4 @@ python3 -m pip freeze > requirements.txt
 python3 -m pip install -r requirements.txt
 ----
 
-
+just dont forget to keep this requirements.txt up to date
