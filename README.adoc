@@ -16,7 +16,7 @@ A virtual environment is (amongst other things):
 
 * Not checked into source control systems such as Git.
 
-* Considered as disposable -- it should be simple to delete and recreate it from scratch. You don't place any project code in the environment
+* Considered as disposable -- it should be simple to delete and recreate it from scratch. You don't place any project code in the environment.
 
 * Not considered as movable or copyable -- you just recreate the same environment in the target location.
 
@@ -36,6 +36,8 @@ python3 -m venv /path/to/new/virtual/environment
 . .venv/bin/activate
 ----
 +
+the first dot here being the source operator used to read and execute commands from the filename argument in the current shell context.
+
 * you can deactivate a virtual environment by typing deactivate in your shell
 +
 [,bash]
